@@ -1,0 +1,32 @@
+<h1>Day 5 - 11/05 Assignment</h1>
+<h3>Assignment 1</h3>
+
+    <ul>
+        <li>Created project</li>
+        <li>Created "car component"</li>
+        <li>Added car array to .ts file with multiple car data</li>
+        <li>Rendered it to UI using HTML file</li>
+        <li>Added Hide Button as well to hide the table</li>
+        <li>Below is the output</li>
+    </ul>
+
+
+<div >
+    <table [hidden]="hide" border="2px" cellpadding="5px" cellmargin="2px">
+        <thead align="center">
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </thead>
+        <tbody align="center" *ngFor="let c of getCar()">
+            <tr>
+                <td>{{c.make}}</td>
+                <td>{{c.model}}</td>
+                <td>{{c.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button (click)="hideContent()" margin="3px" style="margin: 10px; padding: 5px 30px">Hide Table</button>
+
+</div>

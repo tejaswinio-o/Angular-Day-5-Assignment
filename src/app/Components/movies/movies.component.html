@@ -1,0 +1,17 @@
+<h3>Assignment 3</h3>
+<div>
+    <table border="2px" cellpadding="5px" cellmargin="2px">
+        <thead align="center">
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Director</th>
+        </thead>
+        <tbody *ngFor="let m of getMovies()" align="center">
+            <tr>
+                <td>{{m.title}}</td>
+                <td>{{m.genre}}</td>
+                <td>{{m.director}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
